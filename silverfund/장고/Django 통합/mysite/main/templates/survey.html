@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>survey Page</title>
+  <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+  <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+  <py-env>
+    - numpy
+    - matplotlib
+  </py-env>
+  <style>
+      .button {
+    display: block;
+    width: 200px;
+    height: 45px;
+    background: #ffffff;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    line-height: 25px;
+    }
+    .button2 {
+    display: block;
+    width: 100px;
+    height: 45px;
+    background: #ffffff;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    line-height: 25px;
+    }
+  </style>
+</head>
+<body>
+  <py-script>
+    score = 0
+    from js import console
+    def Q1(*args, **kwargs):
+        global score
+        #print('args:', args)
+        #print('kwargs:', kwargs)
+
+        console.log(f'args: {args}')
+        console.log(f'kwargs: {kwargs}')
+        
+        text = Element('test-input').element.value
+
+        #print('text:', text)
+        console.log(f'text: {text}')
+
+        text=int(text)
+        if text == 1:
+            score += 12.5
+        elif text  == 2:
+            score += 12.5
+        elif text == 3:
+            score += 9.3
+        elif text == 4:
+            score += 6.2
+        elif text == 5:
+            score += 3.1
+
+        Element('test-output').element.innerText = text
+        Element('score-output').element.innerText = score
+
+    def Q2(*args, **kwargs):
+        global score
+        #print('args:', args)
+        #print('kwargs:', kwargs)
+
+        console.log(f'args: {args}')
+        console.log(f'kwargs: {kwargs}')
+        
+        text = Element('test-input2').element.value
+
+        #print('text:', text)
+        console.log(f'text: {text}')
+        
+        text=int(text)
+        if text == 1:
+            score += 3.1
+        elif text  == 2:
+            score += 6.2
+        elif text == 3:
+            score += 9.3
+        elif text == 4:
+            score += 12.5
+        elif text == 5:
+            score += 15.6
+
+        Element('test-output2').element.innerText = text
+        Element('score-output2').element.innerText = score
+
+    def Q3(*args, **kwargs):
+        global score
+        #print('args:', args)
+        #print('kwargs:', kwargs)
+
+        console.log(f'args: {args}')
+        console.log(f'kwargs: {kwargs}')
+        
+        text = Element('test-input3').element.value
+
+        #print('text:', text)
+        console.log(f'text: {text}')
+        
+        text=int(text)
+        if text == 1:
+            score += 3.1
+        elif text  == 2:
+            score += 6.2
+        elif text == 3:
+            score += 9.3
+        elif text == 4:
+            score += 12.5
+        elif text == 5:
+            score += 15.6
+
+        Element('test-output3').element.innerText = text
+        Element('score-output3').element.innerText = score
+
+    def Q4(*args, **kwargs):
+        global score
+        #print('args:', args)
+        #print('kwargs:', kwargs)
+
+        console.log(f'args: {args}')
+        console.log(f'kwargs: {kwargs}')
+        
+        text = Element('test-input4').element.value
+
+        #print('text:', text)
+        console.log(f'text: {text}')
+        
+        text=int(text)
+        if text == 1:
+            score += 3.1
+        elif text  == 2:
+            score += 6.2
+        elif text == 3:
+            score += 9.3
+        elif text == 4:
+            score += 12.5
+
+        Element('test-output4').element.innerText = text
+        Element('score-output4').element.innerText = score
+
+    def Q5(*args, **kwargs):
+        global score
+        #print('args:', args)
+        #print('kwargs:', kwargs)
+
+        console.log(f'args: {args}')
+        console.log(f'kwargs: {kwargs}')
+        
+        text = Element('test-input5').element.value
+
+        #print('text:', text)
+        console.log(f'text: {text}')
+        
+        text=int(text)
+        if text == 1:
+            score += 15.6
+        elif text  == 2:
+            score += 12.5
+        elif text == 3:
+            score += 9.3
+        elif text == 4:
+            score += 6.2
+        elif text == 5:
+            score += 3.1
+
+        Element('test-output5').element.innerText = text
+        Element('score-output5').element.innerText = score
+
+    def Q6(*args, **kwargs):
+        global score
+        #print('args:', args)
+        #print('kwargs:', kwargs)
+
+        console.log(f'args: {args}')
+        console.log(f'kwargs: {kwargs}')
+        
+        text = Element('test-input6').element.value
+
+        #print('text:', text)
+        console.log(f'text: {text}')
+        
+        text=int(text)
+        if text == 1:
+            score += 9.3
+        elif text  == 2:
+            score += 6.2
+        elif text == 3:
+            score += 3.1
+
+        Element('test-output6').element.innerText = text
+        Element('score-output6').element.innerText = score
+
+    def Q7(*args, **kwargs):
+        global score
+        #print('args:', args)
+        #print('kwargs:', kwargs)
+
+        console.log(f'args: {args}')
+        console.log(f'kwargs: {kwargs}')
+        
+        text = Element('test-input7').element.value
+
+        #print('text:', text)
+        console.log(f'text: {text}')
+        
+        text=int(text)
+        if text == 1:
+            score += 6.2
+        elif text  == 2:
+            score += 6.2
+        elif text == 3:
+            score += 12.5
+        elif text == 4:
+            score += 18.7
+
+        if score <= 20:
+            tendency = "안정형"
+        elif score <= 40:
+            tendency = "안정추구형"
+        elif score <= 60:
+            tendency = "위험중립형"
+        elif score <= 80:
+            tendency = "적극투자형"
+        else:
+            tendency = "공격투자형"
+
+        Element('test-output7').element.innerText = text
+        Element('score-output7').element.innerText = round(score,1), tendency
+  </py-script>
+  <div style="border:1px solid rgb(3, 3, 3); padding:50px; background-color: rgb(211, 235, 103); height: auto; width: auto; margin: 100px  ">
+    <h1 style="font-size: 20px; font-weight: bold;">Notice</h1>
+    <div style="text-align:left">다음 질문 아래 빈칸에 본인에게 해당하는 번호를 입력해주세요.<br> 
+    질문에 모두 응답하신 이후 설문지 상단의 설문제출 버튼을 클릭해주세요</div></div>
+  <div style="border:1px solid rgb(3, 3, 3); padding:50px; background-color: rgb(235, 158, 103); height: auto; width: auto; margin: 100px  ">
+    <center><button id="submit-button" type="button" pys-onClick="Q1" style="color: rgb(12, 12, 12); background:rgb(242, 242, 247); font-size:1.7em; border-radius:0.5em; padding:5px 20px;" >설문제출</button></center>
+    <div align="right">
+    <a class = 'button2' href="#score-output7" >결과보기</a>
+    <a name="score-output7"></a>
+    </div>
+    <br>
+    <div style="text-align:left">1번 당신의 연령대는 어떻게 됩니까?<br>
+        1. 19세 이하<br>
+        2. 20세~40세<br>
+        3. 41세~50세<br>
+        4. 51세~60세<br>
+        5. 61세 이상</div>
+    <input type="text"  width:800px; id="test-input" style="border: 1px solid #030303;"/>
+    <div id="test-output"></div>
+    <br>
+    <div style="text-align:left">2번 투자하고자 하는 자금의 투자 가능 기간은 얼마나 됩니까?<br>
+        1. 6개월 이내<br>
+        2. 6개월 이상~1년 이내<br>
+        3. 1년 이상~2년 이내<br>
+        4. 2년 이상~3년 이내<br>
+        5. 3년 이상</div>
+    <input type="text" id="test-input2" style="border: 1px solid #030303;"/>
+    <button id="submit-button" type="button" pys-onClick="Q2"></button>
+    <div id="test-output2"></div>
+    <br>
+    <div style="text-align:left">3번 다음 중 투자경험과 가장 가까운 것은 어느 것입니까?<br>
+        1. 은행의 예·적금, 국채, 지방채, 보증채, MMF, CMA 등<br>
+        2. 금융채, 신용도가 높은 회사채, 채권형펀드, 원금보존추구형ELS 등<br>
+        3. 신용도 중간 등급의 회사채, 원금의 일부만 보장되는 ELS, 혼합형펀드 등<br>
+        4. 신용도가 낮은 회사채, 주식, 원금이 보장되지 않는 ELS, 시장수익률 수준의 수익을 추구하는 주식형펀드 등<br>
+        5. ELW, 선물옵션, 시장수익률 이상의 수익을 추구하는 주식형펀드, 파생상품에 투자하는 펀드, 주식 신용거래 등</div>
+    <input type="text" id="test-input3" style="border: 1px solid #030303;"/>
+    <button id="submit-button" type="button" pys-onClick="Q3"></button>
+    <div id="test-output3"></div>
+    <br>
+    <div style="text-align:left">4번 금융상품 투자에 대한 본인의 지식수준은 어느 정도라고 생각하십니까?<br>
+        1. ［매우 낮은 수준］투자의사 결정을 스스로 내려본 경험이 없는 정도<br>
+        2. ［낮은 수준］주식과 채권의 차이를 구별할 수 있는 정도<br>
+        3. ［높은 수준］투자할 수 있는 대부분의 금융상품의 차이를 구별할수 있는 정도<br>
+        4. ［매우 높은 수준］금융상품을 비롯하여 모든 투자대상 상품의 차이를 이해할 수 있는 정도</div>
+    <input type="text" id="test-input4" style="border: 1px solid #030303;"/>
+    <button id="submit-button" type="button" pys-onClick="Q4"></button>
+    <div id="test-output4"></div>
+    <br>
+    <div style="text-align:left">5번 현재 투자하고자 하는 자금은 전체 금융자산(부동산 등을 제외) 중 어느 정도의 비중을 차지합니까?<br>
+        1. 10% 이내<br>
+        2. 10% 이상~20% 이내<br>
+        3. 20% 이상~30% 이내<br>
+        4. 30% 이상~40% 이내<br>
+        5. 40%이상</div>
+    <input type="text" id="test-input5" style="border: 1px solid #030303;"/>
+    <button id="submit-button" type="button" pys-onClick="Q5"></button>
+    <div id="test-output5"></div>
+    <br>
+    <div style="text-align:left">6번 다음 중 당신의 수입원을 가장 잘 나타내고 있는 것은 어느 것입니까?<br>
+        1. 현재 일정한 수입이 발생하고 있으며, 향후 현재 수준을 유지하거나 증가할 것으로 예상된다.<br>
+        2. 현재 일정한 수입이 발생하고 있으나, 향후 감소하거나 불안정할 것으로 예상된다.<br>
+        3. 현재 일정한 수입이 없으며, 연금이 주수입원이다.</div>
+    <input type="text" id="test-input6" style="border: 1px solid #030303;"/>
+    <button id="submit-button" type="button" pys-onClick="Q6"></button>
+    <div id="test-output6"></div>
+    <br>
+    <div style="text-align:left">7번 만약 투자원금에 손실이 발생할 경우 다음 중 감수할 수 있는 손실 수준은 어느 것입니까?<br>
+        1. 무슨 일이 있어도 투자원금은 보전되어야 한다.<br>
+        2. 10% 미만까지는 손실을 감수할 수 있을 것 같다.<br>
+        3. 20% 미만까지는 손실을 감수할 수 있을 것 같다.<br>
+        4. 기대수익이 높다면 위험이 높아도 상관하지 않겠다.</div>
+    <input type="text" id="test-input7" style="border: 1px solid #030303;"/>
+    <button id="submit-button" type="button" pys-onClick="Q7"></button>
+    <div id="test-output7"></div>
+  </div>
+  
+    <br>
+    <br>
+  <div style="border:1px solid rgb(3, 3, 3); padding:50px; background-color: rgb(227, 247, 118); height: auto; width: auto; margin: 100px ">
+
+    <div>검사결과</div>
+    <div id="score-output7"></div>
+    <br>
+    <div>(선택) 퇴직연금은 세액공제 측면에서, 연금저축은 투자금 운용 측면에서 상대적 강점이 있습니다. 당신은 세액공제 혜택과 투자금의 운용성 중 무엇이 더 중요하다고 생각하십니까?<br><br>
+        퇴직연금(세액공제 한도 700만원, 적립금의 70%까지 주식형 펀드·상장지수펀드(ETF) 투자 가능)<br>
+        연금저축(세액공제 한도 400만원, 적립금의 100%까지 주식형 펀드·상장지수펀드(ETF) 투자 가능)<br>
+    (해당하는 항목과 설문조사 결과 성향을 조합하여 아래 선택항목을 클릭해주세요.)</div>
+    <br>
+    <center>
+        <div style="border:1px solid rgb(3, 3, 3); background-color: rgb(134, 181, 241); height: auto; width: auto;">
+            <p>
+                <a class="button" href="result1/">퇴직연금 안정형</a>
+                <a class="button" href="result2/">퇴직연금 안정추구형</a>
+                <a class="button" href="result3/">퇴직연금 위험중립형</a>
+                <a class="button" href="result4/">퇴직연금 적극투자형</a>
+                <a class="button" href="result5/">퇴직연금 공격투자형</a>
+                <a class="button" href="result6/">연금저축 안정형</a>
+                <a class="button" href="result7/">연금저축 안정추구형</a>
+                <a class="button" href="result8/">연금저축 위험중립형</a>
+                <a class="button" href="result9/">연금저축 적극투자형</a>
+                <a class="button" href="result10/">연금저축 공격투자형</a>
+            </p>
+        </div>
+    <br>
+  </div>
+</body>

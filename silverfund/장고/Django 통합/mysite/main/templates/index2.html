@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <title>설문조사</title>
+  </head>
+  <body>
+    <h1>성향테스트</h1>
+    <p>1 당신의 연령대는 어떻게 됩니까?</p>
+    <form name="form">
+      <input type="radio" name="A1" value="v1">19세 이하<br>
+      <input type="radio" name="A1" value="v2">20세~40세<br>
+      <input type="radio" name="A1" value="v3">41세~50세<br>
+      <input type="radio" name="A1" value="v4">51세~60세<br>
+      <input type="radio" name="A1" value="v5">61세 이상<br>
+      <input type="button" name="제출" value="결과확인" onclick="myFucntion()">
+    </form>
+
+    <p id="check"></p>
+    <script type="text/javascript">
+      function myFucntion() {
+        if(form.A1[0].checked==true) document.getElementById("check").innerHTML="12.5";
+        else if(form.A1[1].checked==true) document.getElementById("check").innerHTML="12.5";
+        else if(form.A1[2].checked==true) document.getElementById("check").innerHTML="9.3";
+        else if(form.A1[3].checked==true) document.getElementById("check").innerHTML="6.2"; 
+        else if(form.A1[4].checked==true) document.getElementById("check").innerHTML="3.1";
+      }
+        </script>
+  <br>
+  <br>
+
+  {{ df|safe }}
+  </body>
+</html>
